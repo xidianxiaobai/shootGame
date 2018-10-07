@@ -14,3 +14,8 @@ class Ship():
 
     def bliteme(self):
         self.screen.blit(self.image, self.rect)
+
+    def update_move(self):
+        move_distance = 3
+        if self.move_right:
+            self.rect.centerx += move_distance

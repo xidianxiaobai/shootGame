@@ -15,7 +15,7 @@ def run_game():
     pygame.display.set_caption("打飞机")
     # bg_color = (230, 230, 230)
     while True:
-        gf.check_event()
+        gf.check_event(ship)
         gf.update_screen(ai_setting, screen, ship)
 
 
